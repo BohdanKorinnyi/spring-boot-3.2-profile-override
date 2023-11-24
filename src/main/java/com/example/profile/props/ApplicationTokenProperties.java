@@ -7,6 +7,7 @@ import org.springframework.boot.context.properties.bind.ConstructorBinding;
 public class ApplicationTokenProperties {
     private final Integer refreshInterval;
 
+    // works on Spring Boot 3.1.5
     @ConstructorBinding
     public ApplicationTokenProperties(Integer refreshInterval) {
         this.refreshInterval = refreshInterval;
